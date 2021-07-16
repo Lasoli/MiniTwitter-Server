@@ -15,13 +15,13 @@ router.get("/", (req, res, next) => {
 });
 // router.post("/", (req, res) => {
 //   UserSchema.create(
-//     (newEntry = {
+//     (newUser = {
 //       name: "Doe",
 //       first_name: "John",
 //       email: "john.doe@gmail.com",
 //     }),
-//     function (newEntry) {
-//       res.send(newEntry);
+//     function (newUser) {
+//       res.send(newUser);
 //     }
 //   );
 // });
@@ -29,8 +29,8 @@ router.get("/", (req, res, next) => {
 //   UserSchema.updateMany(
 //     { email: "fghj@fghj" },
 //     { $set: { email: "mmm@ooo" } }
-//   ).then(function (editedEntry) {
-//     res.send(editedEntry);
+//   ).then(function (editedUser) {
+//     res.send(editedUser);
 //   });
 // });
 // router.listen(PORT, () => {
@@ -38,6 +38,6 @@ router.get("/", (req, res, next) => {
 // });
 //
 // router.get("/", (req, res) => {
-//   res.send("Here is the list of students");
+//   res.send("Here is the list of users");
 // });
 module.exports = router;
