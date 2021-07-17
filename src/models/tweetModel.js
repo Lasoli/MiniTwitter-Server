@@ -3,9 +3,10 @@ const Schema = mongoose.Schema;
 
 const tweetSchema = new Schema(
   {
-    user_id: Number,
+    _id: String,
     text: String,
     date: String,
+    user_id: { type: Schema.Types.ObjectId, ref: "UserSchema" },
   },
   { collection: "Tweets" }
 );
