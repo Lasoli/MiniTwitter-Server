@@ -5,7 +5,7 @@ const app = express();
 var cors = require("cors");
 const userRouter = require("./src/routes/user.js");
 const tweetRouter = require("./src/routes/tweet.js");
-const port = 3000;
+const port = process.env.PORT || 3000;
 const mongoose = require("mongoose");
 
 const db = require("./database");
